@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.invite-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.main-page {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: gold;
+    outline-style: groove;
+    outline-width: 5px;
+    outline-color: gold;
+    outline-offset: 5px;
+}
+
+hr {
+    border-top: 5px groove gold;
+    width: 90%;
+}
+
+h3,
+h4 {
+    color: #FAFAD2;
+}
+
+h1 {
+	font-size: 125px;
+}

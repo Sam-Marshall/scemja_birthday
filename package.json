@@ -1,0 +1,16 @@
+{
+  "name": "scemja_bday",
+  "version": "1.0.0",
+  "description": "bday_site",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stacy Marshall",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
