@@ -1,15 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pirou';
+    src: url('./fonts/Pirou-Regular.ttf') format('truetype');
+    src: url('./fonts/Pirou-Regular.eot');
+    src: url('./fonts/Pirou-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Pirou-Regular.woff2') format('woff2'),
+        url('./fonts/Pirou-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Norwester';
+    src: url('./fonts/norwester.ttf') format('truetype');
+    src: url('./fonts/norwester.eot');
+    src: url('./fonts/norwester.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/norwester.woff2') format('woff2'),
+        url('./fonts/norwester.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playlist-Script';
+    src: url('./fonts/Playlist-Script.ttf') format('truetype');
+    src: url('./fonts/Playlist-Script.eot');
+    src: url('./fonts/Playlist-Script.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Playlist-Script.woff2') format('woff2'),
+        url('./fonts/Playlist-Script.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Glacial-Indifference';
+    src: url('./fonts/glacial-indifference.regular.ttf') format('truetype');
+    src: url('./fonts/glacial-indifference.regular.eot');
+    src: url('./fonts/glacial-indifference.regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/glacial-indifference.regular.woff2') format('woff2'),
+        url('./fonts/glacial-indifference.regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marta-Italic';
+    src: url('./fonts/Marta-Italic.ttf') format('truetype');
+    src: url('./fonts/Marta-Italic.eot');
+    src: url('./fonts/Marta-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Marta-Italic.woff2') format('woff2'),
+        url('./fonts/Marta-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: black;
     color: white;
+    min-width: 675px;
+    width: auto !important;
+    width: 675px;
 }
 
 .invite-section {
     padding-top: 35px;
     padding-bottom: 35px;
+    vertical-align: middle;
 }
 
 .main-page {
-    margin-top: 25px;
+    margin-top: 65px;
     margin-bottom: 25px;
     border-style: groove;
     border-width: 1px;
@@ -20,9 +83,16 @@ body {
     outline-offset: 5px;
 }
 
+.second-page {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
 hr {
-    border-top: 5px groove gold;
+    border-top: 2px groove gold;
     width: 90%;
+    margin-top: 2px;
+    margin-bottom: 1px;
 }
 
 h3,
@@ -31,9 +101,110 @@ h4 {
 }
 
 h1 {
-	font-size: 125px;
+    font-size: 125px;
 }
 
-.event-list{
-	margin-bottom: 15px;
+.hollywood {
+    font-size: 110px;
+}
+
+.event-list {
+    margin-bottom: 15px;
+}
+
+.norwester {
+    font-family: 'Norwester';
+    letter-spacing: 2px;
+}
+
+h2.norwester {
+    font-size: 60px;
+}
+
+.glacial {
+    font-family: 'Glacial-Indifference';
+}
+
+.marta {
+    font-family: 'Marta-Italic';
+    letter-spacing: 2px;
+}
+
+.champagne {
+    color: #B2A988 !important;
+}
+
+.light-champagne {
+    color: #d9d4c4 !important;
+}
+
+.table-parent {
+    display: table;
+}
+
+.table-child {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.playscript {
+    font-family: 'Playlist-Script';
+    font-size: 195px;
+}
+
+.page2 {
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.gold {
+    letter-spacing: 2px;
+    font-size: 60px;
+    color: gold;
+}
+
+.home_nav:hover {
+    height: 45px;
+}
+
+@media screen and (max-width: 992px) {
+    h1 {
+        font-size: 100px;
+    }
+
+    .hollywood {
+        font-size: 75px;
+    }
+
+    h2.norwester,
+    .gold {
+        font-size: 35px;
+    }
+
+    .second-page {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    h3.marta {
+        font-size: 20px;
+    }
+
+    h4.marta {
+        font-size: 15px;
+    }
+
+    .playscript {
+        font-size: 150px;
+    }
+
+    .page2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .hollywood {
+        font-size: 65px;
+    }
 }
