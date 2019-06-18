@@ -60,9 +60,11 @@
 body {
     background-color: black;
     color: white;
-    min-width: 675px;
+    min-width: 500px !important;
+    position: relative !important;
     width: auto !important;
-    width: 675px;
+    height: auto;
+    width: 500px;
 }
 
 .invite-section {
@@ -86,6 +88,14 @@ body {
 .second-page {
     margin-top: 200px;
     margin-bottom: 200px;
+}
+
+.leftSplit {
+    margin-left: 45px;
+}
+
+.rightSplit {
+    margin-left: -45px;
 }
 
 hr {
@@ -206,5 +216,20 @@ h2.norwester {
 @media screen and (max-width: 769px) {
     .hollywood {
         font-size: 65px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h1 {
+        font-size: 90px;
+    }
+
+    .vertBar {
+        display: none;
+    }
+
+    .leftSplit,
+    .rightSplit {
+        margin: 0px;
     }
 }
