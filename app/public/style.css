@@ -83,6 +83,7 @@ body {
     outline-width: 5px;
     outline-color: gold;
     outline-offset: 5px;
+    min-height: 100vh;
 }
 
 .second-page {
