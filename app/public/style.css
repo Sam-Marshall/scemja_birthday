@@ -87,7 +87,7 @@ body {
 
 .second-page {
     margin-top: 200px;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 }
 
 .leftSplit {
@@ -98,11 +98,25 @@ body {
     margin-left: -45px;
 }
 
+.home_nav {
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    left: 2px;
+    top: -63px;
+    border: 2px groove gold;
+    background-color: black;
+}
+
 hr {
     border-top: 2px groove gold;
     width: 90%;
     margin-top: 2px;
     margin-bottom: 1px;
+}
+
+hr.smallScreen {
+    display: none;
 }
 
 h3,
@@ -119,7 +133,12 @@ h1 {
 }
 
 .event-list {
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+.borderedEvent {
+    border-right: 5px groove gold;
+    border-left: 5px groove gold;
 }
 
 .norwester {
@@ -231,5 +250,18 @@ h2.norwester {
     .leftSplit,
     .rightSplit {
         margin: 0px;
+    }
+
+    .borderedEvent {
+        border-style: none;
+    }
+
+    .event-list {
+        margin-top: 35px;
+    }
+
+    hr.smallScreen {
+        display: block;
+        width: 45%;
     }
 }
